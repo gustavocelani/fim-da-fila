@@ -7,7 +7,7 @@
 
 Path: `/dashboard`
 
-### :red_circle: Funcionalidade
+### :red_circle: Funcionalidade - Dashboard
 
 * Seletor de período para cada gráfico ou global
 * Gráfico de faturamento
@@ -21,7 +21,7 @@ Path: `/dashboard`
 
 ## :red_circle: Consulta de Pontos de Fidelidade
 
-Path: `/dashboard/user/loyalty`
+Path: `/user/loyalty`
 
 ### :red_circle: Funcionalidade
 
@@ -29,6 +29,8 @@ Path: `/dashboard/user/loyalty`
   * Se CPF não for encontrado, encaminha para o cadastro
 
 ## :red_circle: Cadastro de Novo Cliente
+
+Path: `/user/register`
 
 ### Funcionalidade
 
