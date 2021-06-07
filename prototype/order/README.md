@@ -20,7 +20,7 @@ Se estiver livre (não está sendo usada por outro cliente)
   * "Comanda livre! Indique a mesa da comanda: _______"
   * Está funcionalidade é utilizada pelo garçom no memento da distribuição
 
-### :red_circle: Funcionalidade 2 - COmanda Ocupada
+### :red_circle: Funcionalidade 2 - Comanda Ocupada
 
 Se estiver ocupada (está sendo usada por um cliente)
 
