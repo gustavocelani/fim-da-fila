@@ -12,7 +12,7 @@ Exemplo:
 * QR Code Comanda 2: `/order/2`
 * QR Code Comanda 3: `/order/3`
 
-### Funcionalidade 1
+### :red_circle: Funcionalidade 1 - Comanda Livre
 
 Se estiver livre (não está sendo usada por outro cliente)
 
@@ -20,7 +20,7 @@ Se estiver livre (não está sendo usada por outro cliente)
   * "Comanda livre! Indique a mesa da comanda: _______"
   * Está funcionalidade é utilizada pelo garçom no memento da distribuição
 
-### Funcionalidade 2
+### :red_circle: Funcionalidade 2 - COmanda Ocupada
 
 Se estiver ocupada (está sendo usada por um cliente)
 
@@ -33,7 +33,7 @@ Se estiver ocupada (está sendo usada por um cliente)
 
 Path: `/payment/{order_number}`
 
-### Funcionalidade 1 - Programa de Fidelidade
+### :red_circle: Funcionalidade 1 - Programa de Fidelidade
 
 * Questiona se vai usar o programa de fidelidade
   * Se sim: Autenticação (CPF)
@@ -43,14 +43,14 @@ Path: `/payment/{order_number}`
 * Informa quantidade de pontos total
 * Prossegue para a funcionalidade de pagamento
 
-### Funcionalidade 2 - Pagamento
+### :red_circle: Funcionalidade 2 - Pagamento
 
 * Exibe o consumo e valor total
 * Exibe as diferentes formas de pagamento
 * Realiza pagamento
 * Prossegue para a funcionalidade de pesquisa de satisfação
 
-### Funcionalidade 3 - Pesquisa de Satisfação
+### :red_circle: Funcionalidade 3 - Pesquisa de Satisfação
 
 * Exibe perguntas
 * Cliente está autenticado (pelo CPF informado no programa de fidelidade)?
