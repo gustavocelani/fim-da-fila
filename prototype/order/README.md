@@ -1,6 +1,7 @@
 # Order
 
-:warning: Segurança não precisa ser levada em consideração para o design dos endpoits.
+:warning: Segurança não precisa ser levada em consideração para o design dos endpoits.  
+:warning: Os dados não serão persistentes, logo serão carregados na URL das requisições.
 
 ## Fluxo Principal
 
