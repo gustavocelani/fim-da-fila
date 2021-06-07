@@ -21,7 +21,7 @@ Path: `/dashboard`
 
 ## :red_circle: Consulta de Pontos de Fidelidade
 
-Path: `/user/loyalty`
+Path: `/dashboard/user/loyalty`
 
 ### :red_circle: Funcionalidade
 
@@ -30,7 +30,7 @@ Path: `/user/loyalty`
 
 ## :red_circle: Cadastro de Novo Cliente
 
-Path: `/user/register`
+Path: `/dashboard/user/register`
 
 ### Funcionalidade
 

@@ -31,7 +31,7 @@ Se estiver ocupada (está sendo usada por um cliente)
 
 ## :red_circle: Pagamento
 
-Path: `/payment/{order_number}`
+Path: `/order/payment/{order_number}`
 
 ### :red_circle: Funcionalidade 1 - Programa de Fidelidade
 
