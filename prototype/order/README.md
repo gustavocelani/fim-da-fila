@@ -2,54 +2,94 @@
 
 :warning: Segurança não precisa ser levada em consideração para o design dos endpoits.
 
-## :red_circle: Home Page
+## Fluxo Principal
 
-Path: `/order/{order_number}`
+* Association
+  * Associa-se uma comanda a uma mesa
+* Home (sem pedidos)
+  * Realiza-se um pedido
+* Home (com pedidos)
+  * Inicia-se o pagamento
+* Loalty
+  * Realiza-se o processo de fidelidade
+* Payment
+  * Realiza-se o pagemento
+* Survey
+  * Realiza-se a pesquisa de satisfação
 
-Cada comanda terá um QR Code contendo um desses endpoints.  
-Exemplo:
-* QR Code Comanda 1: `/order/1`
-* QR Code Comanda 2: `/order/2`
-* QR Code Comanda 3: `/order/3`
+## :red_circle: Associação da Comanda com a Mesa
 
-### :red_circle: Funcionalidade 1 - Comanda Livre
+Path: `/order/association?order={order_number}`
 
-Se estiver livre (não está sendo usada por outro cliente)
+Ao associar uma mesa,  
+Redirect to: `/order/home?order={order_number}&table{table_number}`
+
+### Funcionalidade
 
 * Exibe página solicitando o número da mesa para associar a comanda.  
   * "Comanda livre! Indique a mesa da comanda: _______"
-  * Está funcionalidade é utilizada pelo garçom no memento da distribuição
+  * Está funcionalidade é utilizada pelo garçom no memento da distribuição ou pelo próprio cliente
+* Redirect
 
-### :red_circle: Funcionalidade 2 - Comanda Ocupada
+## :red_circle: Home Page
 
-Se estiver ocupada (está sendo usada por um cliente)
+Path: `/order/home?order={order_number}&table{table_number}`
+
+Ao fazer pedido,  
+Redirect to: `/order/home?order={order_number}&table{table_number}&consumption[]={food_id}`
+
+Ao solicitar pagamento,  
+Redirect to: `/order/loyalty?order={order_number}&table{table_number}&consumption[]={food_id}`
+
+### Funcionalidade
 
 * Exibe a página do restaurante contendo:
   * Cardápio Online (visualização e realização de pedidos)
   * Consulta do consumo atual (botão para realizar pagamento)
   * Consulta de pontos de fidelidade
+  * Chamar garçom
 
-## :red_circle: Pagamento
+## :red_circle: Programa de Fidelidade
 
-Path: `/order/payment/{order_number}`
+Path: `/order/loyalty?order={order_number}&table{table_number}&consumption[]={food_id}`
 
-### :red_circle: Funcionalidade 1 - Programa de Fidelidade
+Se for cadastrado ou se usar modo anônimo,  
+Redirect to: `/order/payment?order={order_number}&table{table_number}&consumption[]={food_id}`
+
+Se não for cadastrado,  
+Redirect to: `/dashboard/user/register?order={order_number}&table{table_number}&consumption[]={food_id}`
+
+### Funcionalidade
 
 * Vai usar o programa de fidelidade?
-  * Se sim: Autenticação por CPF (Se CPF não for encontrado, direciona para o cadastro)
+  * Se sim: Autenticação por CPF (Se CPF não for encontrado, redirect para o cadastro)
   * Se não: continua de forma anônima
 * Informa quantidade de pontos ganhos
 * Informa quantidade de pontos total
-* Prossegue para a funcionalidade de pagamento
+* Redirect para a funcionalidade de pagamento
 
-### :red_circle: Funcionalidade 2 - Pagamento
+## :red_circle: Pagamento
+
+Path: `/order/payment?order={order_number}&table{table_number}&consumption[]={food_id}&user={user_id}`
+
+Ao finalizar pagamento,  
+Redirect to: `/order/survey?order={order_number}&user={user_id}`
+
+### Funcionalidade
 
 * Exibe o consumo e valor total
 * Exibe as diferentes formas de pagamento
 * Realiza pagamento
-* Prossegue para a funcionalidade de pesquisa de satisfação
+* Redirect para a funcionalidade de pesquisa de satisfação
 
-### :red_circle: Funcionalidade 3 - Pesquisa de Satisfação
+## :red_circle: Pesquisa de Satisfação
+
+Path: `/order/survey?order={order_number}&user={user_id}`
+
+Ao finalizar pesquisa,  
+Redirect to: `/order/association?order={order_number}`
+
+### Funcionalidade
 
 * Exibe perguntas
 * Cliente está autenticado (pelo CPF informado no programa de fidelidade)?
