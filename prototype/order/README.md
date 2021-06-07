@@ -18,7 +18,7 @@
 * Survey
   * Realiza-se a pesquisa de satisfação
 
-## :red_circle: Associação da Comanda com a Mesa
+## :green_circle: Associação da Comanda com a Mesa
 
 Path: `/order/association.html?order={order_number}`
 
