@@ -3,11 +3,11 @@
 :warning: Segurança não precisa ser levada em consideração para o design dos endpoits.  
 :warning: Não é necessário planejar a etapa de autenticação.
 
-## :red_circle: Home Page
+## :red_circle: Dashboard
 
 Path: `/dashboard.html`
 
-### :red_circle: Funcionalidade - Dashboard
+### Funcionalidade
 
 * Seletor de período para cada gráfico ou global
 * Gráfico de faturamento
@@ -23,12 +23,12 @@ Path: `/dashboard.html`
 
 Path: `/dashboard/user/loyalty.html`
 
-### :red_circle: Funcionalidade
+### Funcionalidade
 
 * Exibe campo de CPF para o cliente consultar os pontos de fidelidade
   * Se CPF não for encontrado, encaminha para o cadastro
 
-## :red_circle: Cadastro de Novo Cliente
+## :red_circle: Cadastro de Novo Usuário
 
 Path: `/dashboard/user/register.html`
 
