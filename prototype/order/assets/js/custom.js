@@ -28,19 +28,6 @@ Custom JS
 jQuery(function($){
 
     /* ----------------------------------------------------------- */
-    /*  0. ON LOAD
-    /* ----------------------------------------------------------- */
-
-    window.onload = function () {
-
-        url = new URL(window.location);
-        orderNumber = url.searchParams.get("order");
-
-        
-	}
-
-
-    /* ----------------------------------------------------------- */
     /*  1. FIXED NAVBAR
     /* ----------------------------------------------------------- */
 
@@ -264,23 +251,3 @@ jQuery(function($){
         jQuery('#aa-preloader-area').delay(300).fadeOut('slow'); // will fade out
     })
 });
-
-/* ----------------------------------------------------------- */
-/*  14. Order Management
-/* ----------------------------------------------------------- */
-
-function associateOrderToTable() {
-    url = new URL(window.location);
-    orderNumber = url.searchParams.get("order");
-    tableNumber = document.getElementById("tables").value;
-    
-    // console.log("associateOrderToTable called to associate order " + orderNumber + " with table " + tableNumber);
-
-    window.location = "http://localhost/order/home.html?order=" + orderNumber + "&table=" + tableNumber;
-}
-
-function searchParameter(parameter) {
-    var url = new URL(window.location);
-    var param = url.searchParams.get(parameter);
-    console.log("url = " + url + " / parameter = " + param);
-}
