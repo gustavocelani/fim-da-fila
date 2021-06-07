@@ -1,21 +1,76 @@
 # Protótipo
 
+## Fluxo Principal
+
+* Grupo de pessoas chega no restaurante e ocupa uma mesa
+* Garçom distribui comandas de acordo com a necessidade dos clientes
+  * Ao distribuir as comandas, o graçom precisa somente apontar a qual mesa ela pertence
+* Pedidos podem ser:
+  * Realizado pelo cardápio online sem a necessidade do garçom
+  * Realizados através do garçom normalmente
+* Pagamento pode ser:
+  * Realizado pela comanda sem a necessidade do garçom
+  * Realizados através do garçom normalmente
+
 ## Lista de Funcionalidades
 
-:red_circle: Integração com Solução de Pagamento  
+:red_circle: Cardápio Online  
+:red_circle: Integração com Solução de Pagamento (Mockup)  
 :red_circle: Pesquisa de Satisfação  
 :red_circle: Programa de Fidelidade  
 :red_circle: Dashboard  
-:red_circle: Um QR Code por Comanda
+:red_circle: Consulta de pontos de fidelidade (endpoint dedicado informando CPF)  
+:red_circle: Consulta do consumo atual pela comanda
 
 ## Funcionalidades do Dashboard
 
+:red_circle: Gerenciador do cardápio online  
+:red_circle: Cadastro de comanda/mesa (uso do garçom)  
 :red_circle: Quantidade de mesas ocupadas  
 :red_circle: Detalhes de cada comanda (horário de chegada, consumo, ...)  
 :red_circle: Ganhos por período (hora/dia/semana/mês/ano)  
 :red_circle: Gráfico com porcentagem de uso dos métodos de pagamento  
 :red_circle: Gráfico com resultado da pesquisa de satisfação  
-:red_circle: Gráifco com horários de pico
+:red_circle: Gráifco com horários de pico  
+:red_circle: Lista de clientes (frequência, horários, produtos mais consumidos, média de gastos, feedbacks)
+
+## Comanda
+
+* Um QR Code por Comanda (cada comanda é um endpoint)  
+* Pode estar ocupada ou não
+
+## Programa de Fidelidade
+
+Participação:
+* Não obrigatória
+* No momento do pagamento, ele faz um simples cadastro (se não possuir)
+  * Nome Completo
+  * CPF
+  * Telefone (opcional)
+* Caso já possua o cadastro, é só informar o CPF
+
+Usabilidade:
+* No momento do pagamento, é só informar o CPF cadastrado
+  * Se não for encontrado, o cadastro é requerido
+* Após o pagamento, o cliente recebe sua pontuação atual
+
+## Pesquisa de Satisfação
+
+Perguntas:
+* Estrelas de 1~5
+* O mais gostou?
+  * Tempo do atendimento
+  * Qualidade da comida
+  * Ambiente
+* O que precisa melhorar? (disable as que o cliente gostou)
+  * Tempo do atendimento
+  * Qualidade da comida
+  * Ambiente
+* Comentário (opcional)
+
+Opções:
+* Perguntar se quer que seja anônima
+  * Se não for, requisitar CPF cadastrado
 
 ## Meios de Pagamento
 
