@@ -20,10 +20,10 @@
 
 ## :red_circle: Associação da Comanda com a Mesa
 
-Path: `/order/association?order={order_number}`
+Path: `/order/association.html?order={order_number}`
 
 Ao associar uma mesa,  
-Redirect to: `/order/home?order={order_number}&table{table_number}`
+Redirect to: `/order/home.html?order={order_number}&table{table_number}`
 
 ### Funcionalidade
 
@@ -34,13 +34,13 @@ Redirect to: `/order/home?order={order_number}&table{table_number}`
 
 ## :red_circle: Home Page
 
-Path: `/order/home?order={order_number}&table{table_number}`
+Path: `/order/home.html?order={order_number}&table{table_number}`
 
 Ao fazer pedido,  
-Redirect to: `/order/home?order={order_number}&table{table_number}&consumption[]={food_id}`
+Redirect to: `/order/home.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 Ao solicitar pagamento,  
-Redirect to: `/order/loyalty?order={order_number}&table{table_number}&consumption[]={food_id}`
+Redirect to: `/order/loyalty.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 ### Funcionalidade
 
@@ -52,13 +52,13 @@ Redirect to: `/order/loyalty?order={order_number}&table{table_number}&consumptio
 
 ## :red_circle: Programa de Fidelidade
 
-Path: `/order/loyalty?order={order_number}&table{table_number}&consumption[]={food_id}`
+Path: `/order/loyalty.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 Se for cadastrado ou se usar modo anônimo,  
-Redirect to: `/order/payment?order={order_number}&table{table_number}&consumption[]={food_id}`
+Redirect to: `/order/payment.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 Se não for cadastrado,  
-Redirect to: `/dashboard/user/register?order={order_number}&table{table_number}&consumption[]={food_id}`
+Redirect to: `/dashboard/user/register.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 ### Funcionalidade
 
@@ -71,10 +71,10 @@ Redirect to: `/dashboard/user/register?order={order_number}&table{table_number}&
 
 ## :red_circle: Pagamento
 
-Path: `/order/payment?order={order_number}&table{table_number}&consumption[]={food_id}&user={user_id}`
+Path: `/order/payment.html?order={order_number}&table{table_number}&consumption[]={food_id}&user={user_id}`
 
 Ao finalizar pagamento,  
-Redirect to: `/order/survey?order={order_number}&user={user_id}`
+Redirect to: `/order/survey.html?order={order_number}&user={user_id}`
 
 ### Funcionalidade
 
@@ -85,10 +85,10 @@ Redirect to: `/order/survey?order={order_number}&user={user_id}`
 
 ## :red_circle: Pesquisa de Satisfação
 
-Path: `/order/survey?order={order_number}&user={user_id}`
+Path: `/order/survey.html?order={order_number}&user={user_id}`
 
 Ao finalizar pesquisa,  
-Redirect to: `/order/association?order={order_number}`
+Redirect to: `/order/association.html?order={order_number}`
 
 ### Funcionalidade
 
