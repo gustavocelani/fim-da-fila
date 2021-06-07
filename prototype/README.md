@@ -41,22 +41,25 @@
 
 ## Programa de Fidelidade
 
-Participação:
+### Participação
+
 * Não obrigatória
 * No momento do pagamento, ele faz um simples cadastro (se não possuir)
   * Nome Completo
   * CPF
-  * Telefone (opcional)
+  * Telefone (opcional) (Perguntar se quer receber novidades por SMS/WhatsApp)
 * Caso já possua o cadastro, é só informar o CPF
 
-Usabilidade:
+### Usabilidade
+
 * No momento do pagamento, é só informar o CPF cadastrado
   * Se não for encontrado, o cadastro é requerido
 * Após o pagamento, o cliente recebe sua pontuação atual
 
 ## Pesquisa de Satisfação
 
-Perguntas:
+### Perguntas
+
 * Estrelas de 1~5
 * O mais gostou?
   * Tempo do atendimento
@@ -68,7 +71,8 @@ Perguntas:
   * Ambiente
 * Comentário (opcional)
 
-Opções:
+### Opções
+
 * Perguntar se quer que seja anônima
   * Se não for, requisitar CPF cadastrado
 
