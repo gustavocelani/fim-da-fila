@@ -1,8 +1,7 @@
 # Dashboard
 
-:warning: Segurança não precisa ser levada em consideração para o design dos endpoits.
-
-:warning: Não é necessário desenvolver a etapa de autenticação.
+:warning: Segurança não precisa ser levada em consideração para o design dos endpoits.  
+:warning: Não é necessário planejar a etapa de autenticação.
 
 ## :red_circle: Home Page
 
