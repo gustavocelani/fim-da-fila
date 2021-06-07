@@ -8,13 +8,13 @@
 
 Path: `/dashboard`
 
-### :red_circle: Funcionalidade - Menu
+### :red_circle: Funcionalidade
 
 * Seletor de período para cada gráfico ou global
-* Faturamento
+* Gráfico de faturamento
 * Quantidade de mesas ocupadas
 * Quantidade de pedidos realizados
-* Gráfico com quais pedidos foram realizados
+* Gráfico de barras com quais pedidos foram realizados
 * Tabela com o prato relacionado ao horário que foi pedido
 * Gráfico com o resultado da pesquisa de satisfação
 * Lista de clientes
