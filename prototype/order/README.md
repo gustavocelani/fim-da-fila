@@ -35,10 +35,9 @@ Path: `/payment/{order_number}`
 
 ### :red_circle: Funcionalidade 1 - Programa de Fidelidade
 
-* Questiona se vai usar o programa de fidelidade
-  * Se sim: Autenticação (CPF)
-    * Se CPF não for encontrado, direciona para o cadastro
-  * Se não, continua de forma anônima
+* Vai usar o programa de fidelidade?
+  * Se sim: Autenticação por CPF (Se CPF não for encontrado, direciona para o cadastro)
+  * Se não: continua de forma anônima
 * Informa quantidade de pontos ganhos
 * Informa quantidade de pontos total
 * Prossegue para a funcionalidade de pagamento
