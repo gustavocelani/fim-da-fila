@@ -25,7 +25,7 @@
 ## Funcionalidades do Dashboard
 
 :red_circle: Gerenciador do cardápio online  
-:red_circle: Cadastro de comanda/mesa (uso do garçom)  
+:green_circle: Cadastro de comanda/mesa (uso do garçom)  
 :red_circle: Quantidade de mesas ocupadas  
 :red_circle: Detalhes de cada comanda (horário de chegada, consumo, ...)  
 :red_circle: Ganhos por período (hora/dia/semana/mês/ano)  

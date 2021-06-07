@@ -5,7 +5,7 @@
 
 ## :red_circle: Home Page
 
-Path: `/dashboard`
+Path: `/dashboard.html`
 
 ### :red_circle: Funcionalidade - Dashboard
 
@@ -21,7 +21,7 @@ Path: `/dashboard`
 
 ## :red_circle: Consulta de Pontos de Fidelidade
 
-Path: `/dashboard/user/loyalty`
+Path: `/dashboard/user/loyalty.html`
 
 ### :red_circle: Funcionalidade
 
@@ -30,7 +30,13 @@ Path: `/dashboard/user/loyalty`
 
 ## :red_circle: Cadastro de Novo Cliente
 
-Path: `/dashboard/user/register`
+Path: `/dashboard/user/register.html`
+
+Se o usuário está se cadastrando pela etapa de fidelidade durante o pagamento,  
+Path: `/dashboard/user/register.html?order={order_number}&table{table_number}&consumption[]={food_id}`
+
+Se o usuário estiver durante uma operação de pagamento,  
+Redirect to: `/order/payment.html?order={order_number}&table{table_number}&consumption[]={food_id}&user={user_id}`
 
 ### Funcionalidade
 
@@ -39,6 +45,7 @@ Path: `/dashboard/user/register`
   * CPF
   * Telefone (opcional)
     * Perguntar se quer receber novidades por SMS/WhatsApp
+* Redirect
 
 ## Legenda de Cores
 
