@@ -250,7 +250,7 @@
 
 #mu-counter{
 	background-attachment: fixed;
-	background-image: url("assets/img/counter-bg.jpg");
+	background-image: url("assets/img/testimonial-bg.jpg");
 	background-size: cover;
 	display: inline;
 	float: left;	
@@ -763,7 +763,7 @@ RESERVATION SECTION
 								position: relative;
 								z-index: 20;
 								&:before{
-									content: '\f10e';																		
+									content: '';																		
 									font-family: fontAwesome;
 									font-size: 50px;
 									left: 1%;

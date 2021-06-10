@@ -32,7 +32,7 @@ Redirect to: `/order/home.html?order={order_number}&table{table_number}`
   * Está funcionalidade é utilizada pelo garçom no memento da distribuição ou pelo próprio cliente
 * Redirect
 
-## :red_circle: Home Page
+## :green_circle: Home Page
 
 Path: `/order/home.html?order={order_number}&table{table_number}`
 

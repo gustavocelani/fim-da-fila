@@ -472,7 +472,7 @@ img {
 ====================*/
 #mu-counter {
   background-attachment: fixed;
-  background-image: url("assets/img/counter-bg.jpg");
+  background-image: url("assets/img/testimonial-bg.jpg");
   background-size: cover;
   display: inline;
   float: left;
@@ -983,7 +983,7 @@ RESERVATION SECTION
   z-index: 20;
 }
 #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
-  content: '\f10e';
+  content: '';
   font-family: fontAwesome;
   font-size: 50px;
   left: 1%;

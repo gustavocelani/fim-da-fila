@@ -7,6 +7,10 @@ jQuery(function($){
         url = new URL(window.location);
         orderNumber = url.searchParams.get("order");
 
+        if (orderNumber == null) {
+            window.location = "http://localhost/order/association.html?order=1";
+        }
+
         //console.log("page loaded with order " + orderNumber);
 
         document.getElementById("order_text").innerHTML = "Você está utilizando a comanda " + orderNumber +"<br>Está comanda está livre!";

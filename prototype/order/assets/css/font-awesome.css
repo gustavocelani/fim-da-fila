@@ -937,7 +937,7 @@
   content: "\f10d";
 }
 .fa-quote-right:before {
-  content: "\f10e";
+  content: "";
 }
 .fa-spinner:before {
   content: "\f110";
