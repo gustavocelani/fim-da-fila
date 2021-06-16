@@ -39,14 +39,15 @@ Path: `/order/home.html?order={order_number}&table{table_number}`
 Ao fazer pedido,  
 Redirect to: `/order/home.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
-Ao solicitar pagamento,  
+Ao realizar pagamento,  
 Redirect to: `/order/loyalty.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
 ### Funcionalidade
 
 * Exibe a página do restaurante contendo:
   * Cardápio Online (visualização e realização de pedidos)
-  * Consulta do consumo atual (botão para realizar pagamento)
+  * Consulta do consumo atual
+  * Pagamento
   * Consulta de pontos de fidelidade
   * Chamar garçom
 
@@ -68,20 +69,6 @@ Redirect to: `/dashboard/user/register.html?order={order_number}&table{table_num
 * Informa quantidade de pontos ganhos
 * Informa quantidade de pontos total
 * Redirect para a funcionalidade de pagamento
-
-## :red_circle: Pagamento
-
-Path: `/order/payment.html?order={order_number}&table{table_number}&consumption[]={food_id}&user={user_id}`
-
-Ao finalizar pagamento,  
-Redirect to: `/order/survey.html?order={order_number}&user={user_id}`
-
-### Funcionalidade
-
-* Exibe o consumo e valor total
-* Exibe as diferentes formas de pagamento
-* Realiza pagamento
-* Redirect para a funcionalidade de pesquisa de satisfação
 
 ## :red_circle: Pesquisa de Satisfação
 
