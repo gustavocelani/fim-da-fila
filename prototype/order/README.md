@@ -11,10 +11,10 @@
   * Realiza-se um pedido
 * Home (com pedidos)
   * Inicia-se o pagamento
-* Loalty
-  * Realiza-se o processo de fidelidade
 * Payment
   * Realiza-se o pagemento
+* Loalty
+  * Realiza-se o processo de fidelidade
 * Survey
   * Realiza-se a pesquisa de satisfação
 
@@ -51,38 +51,29 @@ Redirect to: `/order/loyalty.html?order={order_number}&table{table_number}&consu
   * Consulta de pontos de fidelidade
   * Chamar garçom
 
-## :red_circle: Programa de Fidelidade
+## :green_circle: Programa de Fidelidade
 
 Path: `/order/loyalty.html?order={order_number}&table{table_number}&consumption[]={food_id}`
 
-Se for cadastrado ou se usar modo anônimo,  
-Redirect to: `/order/payment.html?order={order_number}&table{table_number}&consumption[]={food_id}`
-
-Se não for cadastrado,  
-Redirect to: `/dashboard/user/register.html?order={order_number}&table{table_number}&consumption[]={food_id}`
+Ao finalizar,  
+Redirect to: `/order/thankyou.html`
 
 ### Funcionalidade
 
-* Vai usar o programa de fidelidade?
-  * Se sim: Autenticação por CPF (Se CPF não for encontrado, redirect para o cadastro)
-  * Se não: continua de forma anônima
 * Informa quantidade de pontos ganhos
-* Informa quantidade de pontos total
-* Redirect para a funcionalidade de pagamento
+* Campo para CPF (autenticação e identificação do cliente)
+* Nota de 0 a 5 estrelas
+* Mensagem aberta
+* Enviar
+  * Possibilidade de anonimização
 
-## :red_circle: Pesquisa de Satisfação
+## :green_circle: Agradecimento
 
-Path: `/order/survey.html?order={order_number}&user={user_id}`
-
-Ao finalizar pesquisa,  
-Redirect to: `/order/association.html?order={order_number}`
+Path: `/order/thankyou.html`
 
 ### Funcionalidade
 
-* Exibe perguntas
-* Cliente está autenticado (pelo CPF informado no programa de fidelidade)?
-  * Se sim: Pergunta se pode ser identificado na pesquisa ou se será anônima
-  * Se não: envia de forma anônima
+* Tela de agradecimento (finalização da operação)
 
 ## Legenda de Cores
 

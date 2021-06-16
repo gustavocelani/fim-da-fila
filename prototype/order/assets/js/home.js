@@ -129,7 +129,7 @@ function payment() {
     }
 
     redirect_url +=
-        "/order/payment.html"
+        "/order/loyalty.html"
         + window.location.search.substr(0);
 
     //console.log("Redirecting to = " + redirect_url);
