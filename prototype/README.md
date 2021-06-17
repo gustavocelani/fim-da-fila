@@ -20,8 +20,8 @@
 :yellow_circle: Pesquisa de Satisfação  
 :green_circle: Programa de Fidelidade  
 :green_circle: Consulta de pontos de fidelidade  
-:green_circle: Consulta do consumo atual pela comanda
-:red_circle: Dashboard  
+:green_circle: Consulta do consumo atual pela comanda  
+:red_circle: Dashboard
 
 ## Funcionalidades do Dashboard
 
