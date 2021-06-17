@@ -14,18 +14,18 @@
 
 ## Lista de Funcionalidades
 
+:green_circle: Cadastro de comanda/mesa (uso do garçom)  
 :green_circle: Cardápio Online  
 :green_circle: Integração com Solução de Pagamento (Mockup)  
 :yellow_circle: Pesquisa de Satisfação  
 :green_circle: Programa de Fidelidade  
-:red_circle: Dashboard  
 :green_circle: Consulta de pontos de fidelidade  
 :green_circle: Consulta do consumo atual pela comanda
+:red_circle: Dashboard  
 
 ## Funcionalidades do Dashboard
 
 :red_circle: Gerenciador do cardápio online  
-:green_circle: Cadastro de comanda/mesa (uso do garçom)  
 :red_circle: Quantidade de mesas ocupadas  
 :red_circle: Detalhes de cada comanda (horário de chegada, consumo, ...)  
 :red_circle: Ganhos por período (hora/dia/semana/mês/ano)  
