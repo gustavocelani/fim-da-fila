@@ -15,11 +15,11 @@
 ## Lista de Funcionalidades
 
 :green_circle: Cardápio Online  
-:red_circle: Integração com Solução de Pagamento (Mockup)  
-:red_circle: Pesquisa de Satisfação  
-:red_circle: Programa de Fidelidade  
+:green_circle: Integração com Solução de Pagamento (Mockup)  
+:yellow_circle: Pesquisa de Satisfação  
+:green_circle: Programa de Fidelidade  
 :red_circle: Dashboard  
-:yellow_circle: Consulta de pontos de fidelidade  
+:green_circle: Consulta de pontos de fidelidade  
 :green_circle: Consulta do consumo atual pela comanda
 
 ## Funcionalidades do Dashboard
