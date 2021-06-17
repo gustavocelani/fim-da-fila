@@ -17,7 +17,7 @@
 :green_circle: Cadastro de comanda/mesa (uso do garçom)  
 :green_circle: Cardápio Online  
 :green_circle: Integração com Solução de Pagamento (Mockup)  
-:yellow_circle: Pesquisa de Satisfação  
+:green_circle: Pesquisa de Satisfação  
 :green_circle: Programa de Fidelidade  
 :green_circle: Consulta de pontos de fidelidade  
 :green_circle: Consulta do consumo atual pela comanda  
