@@ -21,18 +21,7 @@
 :green_circle: Programa de Fidelidade  
 :green_circle: Consulta de pontos de fidelidade  
 :green_circle: Consulta do consumo atual pela comanda  
-:red_circle: Dashboard
-
-## Funcionalidades do Dashboard
-
-:red_circle: Gerenciador do cardápio online  
-:red_circle: Quantidade de mesas ocupadas  
-:red_circle: Detalhes de cada comanda (horário de chegada, consumo, ...)  
-:red_circle: Ganhos por período (hora/dia/semana/mês/ano)  
-:red_circle: Gráfico com porcentagem de uso dos métodos de pagamento  
-:red_circle: Gráfico com resultado da pesquisa de satisfação  
-:red_circle: Gráifco com horários de pico  
-:red_circle: Lista de clientes (frequência, horários, produtos mais consumidos, média de gastos, feedbacks)
+:green_circle: Dashboard
 
 ## Comanda
 
