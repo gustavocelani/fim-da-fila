@@ -1,4 +1,4 @@
-# MBA StartUp Project
+# MBA StartupOne Project
 
 ![Logo](img/fim_da_fila_logo.png)
 
